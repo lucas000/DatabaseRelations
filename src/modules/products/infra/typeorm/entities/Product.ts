@@ -24,7 +24,7 @@ class Product {
   @Column()
   quantity: number;
 
-  @OneToMany(() => OrdersProducts, order => order.order_id)
+  @OneToMany(() => OrdersProducts, order => order.product)
   @JoinTable()
   order_products: OrdersProducts[];
 
