@@ -27,10 +27,6 @@ export default class CreateOrders1590002534829 implements MigrationInterface {
             type: 'timestamp',
             default: 'now()',
           },
-          {
-            name: 'customer',
-            type: 'varchar',
-          },
         ],
         foreignKeys: [
           {
